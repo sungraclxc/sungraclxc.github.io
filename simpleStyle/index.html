@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simple Style</title>
+</head>
+<body>
+    <div class="search_container">
+        <form>
+            <div class="search_box">
+                <div class="input_box">
+                    <input type="text" class="search_input" placeholder="搜索内容" />
+                    <button class="search_icon" onclick="addClass(this, event);"><span></span></button>
+                </div>
+                <span class="close" onclick="removeClass();"></span>
+            </div>
+        </form>
+    </div>
+    <section class="auto_banner">
+        <div class="banner_style collide">
+            <h1>Coming on Now!</h1>
+            <p>有什么要说的吗？</p>
+        </div>
+    </section>
+
+    <div class="banner-button">
+        <div class="button">
+            <svg>
+                <rect class="lineStyle"></rect>
+                <div class="text">
+                    <a href="" target="_blank">前排板凳瓜子</a>
+                </div>
+            </svg>
+        </div>
+        <div class="button">
+            <svg>
+                <rect class="lineStyle"></rect>
+                <div class="text">
+                    <a href="" target="_blank">路过打酱油</a>
+                </div>
+            </svg>
+        </div>
+        <div class="button">
+            <svg>
+                <rect class="lineStyle"></rect>
+                <div class="text">
+                    <a href="" target="_blank">强势围观</a>
+                </div>
+            </svg>
+        </div>
+    </div>
+    <script src="jquery-2.1.4.js"></script>
+<script type="text/javascript">
+    function addClass(obj, evt){
+        var container = $(obj).closest('.search_box');
+
+        if(!container.hasClass('active')){
+            container.addClass('active');
+            evt.preventDefault();
+        }
+    }
+    function removeClass() {
+        var container = $('.search_box');
+        if(container.hasClass('active')){
+            container.removeClass('active');
+
+        }
+    }
+
+
+</script>
+</body>
+</html>
