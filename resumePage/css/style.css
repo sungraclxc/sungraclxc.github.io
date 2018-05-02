@@ -63,8 +63,7 @@ Slider
   background-image: url(../img/img-1.jpg);
 }
 .cd-slider > li:nth-of-type(2) {
-  background-color: #ffb251;
-  background-image: url(../img/img-2.jpg);
+  background-color:#104E8B;
 }
 .cd-slider > li:nth-of-type(3) {
   background-color: #7d7160;
@@ -311,6 +310,12 @@ svg cover layer
   -moz-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
+/* --------------------------------
+
+fixed info
+
+-------------------------------- */
+
 .fixedMenu {
   text-align: center;
   position: fixed;
@@ -325,15 +330,77 @@ svg cover layer
 }
 .fixedMenu ul {
   display: block;
-  margin: 0 auto;
-  width: 200px;
+  margin: 10px auto;
+  width: 500px;
+
 }
 .fixedMenu li {
   margin: 0 auto;
   padding-left: 15px;
   float: left;
-  width:100px;
+  width:250px;
   font-size: 14px;
   line-height: 30px;
+}
+
+#occupation {
+  font-family: "Microsoft YaHei";
+  font-size:20px;
+}
+#poem {
+  font-size: 14px;
+  color: #9F79EE;
+}
+#project_intro {
+  width: 50%;
+  height: 400px;
+  margin: 0 auto;
+}
+.myProjects {
+  margin-top: 10px;
+  float: left;
+  height: 50px;
+  display: block;
+}
+.projectName {
+   font-size: 16px;
+   width:20%;
+ }
+.projectIntro {
+  font-size: 14px;
+  width:70%;
+  color: white;
+  text-align: right;
+}
+.myProjects a {
+  color: lightgrey;
+  font-size: 20px;
+}
+
+.myLabels {
+  width: 330px;
+  margin: 0 auto;
+  height: 300px;
+}
+.labels{
+  height: 20px;
+  margin: 5px;
+  background-color: rosybrown;
+  font-size: 14px;
+  color: white;
+  padding:2px;
+  width: 100px;
+  float: left;
+  border-radius:10px;
+}
+#graduate{
+  color: indianred;
+}
+#experience {
+  color: darkred;
+}
+#please{
+  color: yellow;
+  font-size:18px;
 }
 
